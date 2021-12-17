@@ -1,23 +1,17 @@
-let myName = 'Nicolas';
-const age = 19;
+const myName = 'Nicolas';
+const myAge = 12;
 const suma = (a: number, b: number) => {
   return a + b;
 };
-suma(12, 12);
+suma(12, 23);
 
 class Persona {
-  age;
-  name;
-
-  constructor(name: string, age: number) {
-      this.age = age;
-      this.name = name;
-  }
+  constructor(private age: number, private name: string) {}
 
   getSummary() {
-    return `my name is ${this.name} and my age is ${this.age}`;
+    return `my name is ${this.name}, ${this.age}`;
   }
 }
 
-const nicolas = new Persona('niolcas', 12);
+const nicolas = new Persona(15, 'nicolas');
 nicolas.getSummary();
