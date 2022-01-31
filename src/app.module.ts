@@ -20,9 +20,7 @@ const client = new Client({
 })
 
 client.connect();
-client.query(`SELECT * FROM tasks`, (err, rest) => {
-  
-})
+client.query(`SELECT * FROM tasks`, (err, rest) => {})
 @Module({
   imports: [
     ConfigModule.forRoot({
